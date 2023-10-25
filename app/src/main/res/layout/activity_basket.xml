@@ -7,53 +7,207 @@
     tools:context=".BasketActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:weightSum="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
 
         <LinearLayout
-            android:id="@+id/l2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_weight="3"
-                android:gravity="right"
-                android:text="Total:"
-                android:textSize="25dp"
+                android:id="@+id/item1name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Item Name"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/item1price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="0"
-                android:textSize="25dp"
-                android:textStyle="bold" />
-        </LinearLayout>
 
+                android:text="Item Price"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/item1delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:background="@drawable/delete_vektor"
+                android:text="detele" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item2name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Item Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item2price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Item Price"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/item2delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:background="@drawable/delete_vektor"
+                android:text="detele" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item3name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Item Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item3price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Item Price"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/item3delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:background="@drawable/delete_vektor"
+                android:text="detele" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item4name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Item Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item4price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Item Price"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/item4delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:background="@drawable/delete_vektor"
+                android:text="detele" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item5name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Item Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item5price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Item Price"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/item5delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:background="@drawable/delete_vektor"
+                android:text="detele" />
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="Total:"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/delFlotin"
+        android:id="@+id/backToItems"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"

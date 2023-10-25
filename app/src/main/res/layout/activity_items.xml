@@ -6,23 +6,266 @@
     android:layout_height="match_parent"
     tools:context=".ItemsActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/goToBasket">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:background="@drawable/banana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Banan"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9 SAR"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 Kilo"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/addBanana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Add" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/apple"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text3ViewName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apple"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text3ViewPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10 SAR"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textVi12ewDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1 Kilo"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/addApple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Add" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mangopng"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textVi12ewName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Mango"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textVie123wPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="11 SAR"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textVi123ewDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1 Kilo"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/addMango"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Add" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grape"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textViewN32ame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grape"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView321Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12 SAR"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewDe421scription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1 Kilo"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/addGrape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Add" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="3dp"
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kiwipng"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textVi123ewName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Kiwi"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textVie421wPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="13 SAR"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewDesc5gfription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="1 Kilo"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/addKiwi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Add" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/goToBasket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="1dp"
+        android:text="Basket"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/basket" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
